@@ -129,7 +129,7 @@ function deserializeValue(_key: any, value: any, options?: any) {
  * // prints { int32: 10 }
  * console.log(EJSON.parse(text));
  */
-function parse(text: any, options: any) {
+function parse(text: any, options?: any) {
   options = Object.assign({}, { relaxed: true }, options);
 
   // relaxed implies not strict
